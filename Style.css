@@ -1,0 +1,437 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Sniglet&family=Source+Sans+3:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+/*
+HEADERS ~
+font-family: 'Open Sans', sans-serif;
+
+BODY ~
+font-family: 'Source Sans 3', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* General */
+body {
+  background-color: var(--background-color);
+}
+
+/* TYPOGRAPHY */
+:root {
+  font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+
+  --font-size--small: 1.4rem;
+  /* 14px */
+  --font-family--small: "Source Sans 3", sans-serif;
+  --font-weight--small: normal;
+
+  --font-size--default: 1.6rem;
+  /* 16px */
+  --font-family--default: "Source Sans 3", sans-serif;
+  --font-weight--default: normal;
+
+  --font-size--medium: 2rem;
+  /* 20px */
+  --font-family--medium: "Open Sans", sans-serif;
+  --font-weight--medium: bold;
+
+  --font-size--large: 2.4rem;
+  /* 24px */
+  --font-family--large: "Open Sans", sans-serif;
+  --font-weight--large: bold;
+
+  --font-size--xlarge: 3.2rem;
+  /* 32px */
+  --font-family--xlarge: "Open Sans", sans-serif;
+  --font-weight--xlarge: bold;
+
+  --font-size--xxlarge: 4rem;
+  /* 40px */
+  --font-family--xxlarge: "Open Sans", sans-serif;
+  --font-weight--xxlarge: bold;
+
+  /* Define your color variables */
+  --primary-color: #9989b0;
+  --primary-color--active: #6c5d95;
+  --primary-color--300: #af9fbd;
+  --primary-color--200: #c5b5cb;
+  --primary-color--100: #dbcbd8;
+
+  --secondary-color: #5b6578;
+  --secondary-color--active: #363f57;
+  --secondary-color--200: #818b9a;
+  --secondary-color--100: #a7b1bc;
+
+  --tertiary-color: #b3aeac;
+  --tertiary-color--active: #918983;
+  --tertiary-color--100: #e6e3e0;
+
+  --background-color: #f6f6f6;
+  --text-color: #333;
+  --text-color--inverse: #ccc;
+
+  --danger-color: #d52941;
+  --warning-color: #fcd581;
+
+  --default-transition: 0.3s;
+}
+
+/* Standard Headings */
+h1 {
+  font-family: var(--font-family--xxlarge);
+  font-size: var(--font-size--xxlarge);
+  font-weight: var(--font-weight--xxlarge);
+}
+
+h2 {
+  font-family: var(--font-family--xlarge);
+  font-size: var(--font-size--xlarge);
+  font-weight: var(--font-weight--xlarge);
+}
+
+h3 {
+  font-family: var(--font-family--large);
+  font-size: var(--font-size--large);
+  font-weight: var(--font-weight--large);
+}
+
+h4 {
+  font-family: var(--font-family--medium);
+  font-size: var(--font-size--medium);
+  font-weight: var(--font-weight--medium);
+}
+
+/* Standard Text */
+body {
+    /* Typography */
+    font-family: var(--font-family--default);
+    font-size: var(--font-size--default);
+    font-weight: var(--font-weight--default);
+}
+
+/* Standard Links */
+a {
+  text-decoration: none;
+  color: var(--text-color);
+
+  &:hover {
+    color: var(--primary-color);
+    transition: var(--default-transition);
+  }
+
+  &:active {
+    color: var(--primary-color);
+  }
+
+  &:active:hover {
+    color: var(--primary-color--active);
+  }
+}
+
+/* Unordered Lists (With PawPrints!) */
+.paw-print-list {
+  list-style-type: image;
+  list-style-image: url(/Resources/SVG\ Icons/paw-print.svg) no-repeat bottom;
+}
+
+/* Standard Buttons */
+.primary-button {
+  /* Sizing */
+  padding: 0.2rem 1rem;
+
+  /* Styling */
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  color: #fff;
+
+  &:hover {
+    /* Styling */
+    background-color: var(--primary-color--active);
+    color: #fff;
+  }
+}
+
+.secondary-button {
+  /* Sizing */
+  padding: 0.2rem 1rem;
+
+  /* Styling */
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  color: #fff;
+
+  &:hover {
+    /* Styling */
+    background-color: var(--secondary-color--active);
+    color: #fff;
+  }
+}
+
+.tertiary-button {
+  /* Sizing */
+  padding: 0.2rem 1rem;
+
+  /* Styling */
+  background-color: var(--tertiary-color);
+  border-radius: 4px;
+  color: #fff;
+
+  &:hover {
+    /* Styling */
+    background-color: var(--tertiary-color--active);
+    color: #fff;
+  }
+}
+
+/* ---------- FOOTER (MOBILE FIRST) ---------- */
+footer {
+  /* Positioning */
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 100px;
+
+  /* Sizing */
+  width: 90%;
+
+  > ul {
+    /* Positioning */
+    padding: 0;
+    margin: 0;
+
+    > li {
+      list-style: none;
+      text-decoration: none;
+    }
+  }
+}
+
+/* ---------- NAVIGATION (MOBILE FIRST) ---------- */
+nav {
+  /* Positioning */
+  position: fixed;
+  top: 0;
+  align-items: flex-end;
+  padding: 0;
+  z-index: 1000;
+
+  /* Sizing */
+  width: 100%;
+  height: 72px;
+
+  /* Styling */
+  background-color: var(--background-color);
+  /* background-color: transparent; */
+  /* backdrop-filter: blur(10px); */
+
+  .nav-content {
+    /* Sizing */
+    width: 90%; /* Fills 90% of screen width only! */
+    margin: auto;
+
+    /* Positioning */
+    
+    #nav-mobile-elements {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        /* Positioning */
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+
+        /* Sizing */
+        padding: 0;
+        margin: 0;
+
+        background-color: var(--background-color);
+
+
+        > li {
+            /* Styling */
+            list-style: none;
+            text-decoration: none;
+        }
+
+        > .nav-link {
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        .profile-options {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            width: 150px;
+        }
+
+    }
+
+    .nav-logo {
+      /* Positioning */
+      display: flex;
+      align-items: flex-end;
+
+      /* Logo Image */
+      > img {
+        /* Positioning */
+        margin: 8px 0 4px 0;
+
+        /* Sizing */
+        height: 60px; /* Default Size */
+        width: auto;
+      }
+    }
+
+    .profile-options {
+      /* Positioning */
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+
+      /* Sign In and Create Account Buttons*/
+      > .primary-button,
+      > .tertiary-button {
+        margin: 0 0 4px 0;
+      }
+
+      /* User Icon Button */
+      > .user-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+
+/* ---------- BREAKPOINTS ---------- */
+/* BASE ELEMENTS(MOBILE FIRST) */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+#wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0
+  }
+
+  #content {
+    width: 100%;
+  }
+  #sidebar {
+    width: 100%;
+  }
+
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 64em) {
+    nav {
+        #nav-mobile-menu-button {
+            visibility: hidden;
+            content: none;
+        }
+        .nav-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .nav-links {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: flex-end;
+                
+                > .nav-link {
+                    padding: 0 24px 0 0;
+                    width: min-content;
+                    text-wrap: nowrap;
+                }
+
+                > .profile-options {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: min-content;
+                    text-wrap:nowrap;
+                }
+            }
+        }
+    }
+
+    #wrapper {
+        width: 90%;
+        display: flex;
+        flex-direction: row; /* Switches from COL to ROW */
+        justify-content: space-between;
+      }
+
+      #content {
+        margin: 0;
+        width: 70%;
+        height: 100%;
+      }
+
+      #sidebar {
+        width: 25%;
+      }
+
+      footer {
+        flex-direction: row; /* Switches from COL to ROW */
+        justify-content: space-between;
+      }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 80em) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+
+    #wrapper {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+      }
+
+      #content {
+        margin: 0;
+        width: 70%;
+        height: 100%;
+      }
+
+      #sidebar {
+        width: 25%;
+      }
+
+      footer {
+        flex-direction: row !important;
+        width: 90%;
+        margin: 0 auto;
+      }
+}
+
+
+.button {
+  color: var(--text-color);
+}
