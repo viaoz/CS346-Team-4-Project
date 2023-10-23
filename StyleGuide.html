@@ -6,7 +6,7 @@
   <title>replit</title>
   <link href="Style.css" rel="stylesheet" type="text/css" />
   <link href="Navigation.css" rel="stylesheet" type="text/css" />
-  <script src="hamburger.js"></script>
+  <script src="MobileMenu.js"></script>
 </head>
 
 <body>
@@ -14,9 +14,9 @@
     <div class="nav-content">
       <div id="nav-mobile-elements">
       <a href="#" class="nav-logo"><img src="/Resources/Images/FVVV-logo.png" alt="Fox Valley Virtual Vet logo"></a>
-      <button onclick="" id="nav-mobile-menu-button">Menu</button>
+      <button onclick="toggleMenu()" id="nav-mobile-menu-button"><img src="/Resources/Images/menu.png" id="menu-icon"></button>
     </div>
-      <ul class="nav-links">
+      <ul id="nav-links">
           <li class="nav-link">
               <a href="#">Messaging</a>
           </li>

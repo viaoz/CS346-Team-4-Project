@@ -240,11 +240,20 @@ nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        > button {
+            border: none;
+            background-color: transparent;
+        }
+
+        #menu-icon {
+            width: 24px;
+        }
     }
 
-    .nav-links {
+    #nav-links {
         /* Positioning */
-        display: block;
+        display: none;
         margin: 0 auto;
         text-align: center;
 
@@ -341,15 +350,14 @@ body {
 @media only screen and (min-width: 64em) {
     nav {
         #nav-mobile-menu-button {
-            visibility: hidden;
-            content: none;
+            display: none;
         }
         .nav-content {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
 
-            .nav-links {
+            #nav-links {
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-end;
