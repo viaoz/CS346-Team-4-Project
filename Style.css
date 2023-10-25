@@ -459,6 +459,7 @@ body {
   color: var(--text-color);
 }
 
+<<<<<<< HEAD
 button {
   border: none;
 }
@@ -676,3 +677,5 @@ border-bottom: 5px solid #918983;
 
 
 
+=======
+>>>>>>> 3c99605 (chore : created a mock blog with mock articles card list)
