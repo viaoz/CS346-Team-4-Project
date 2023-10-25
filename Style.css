@@ -444,7 +444,49 @@ body {
       }
 }
 
-
 .button {
   color: var(--text-color);
 }
+
+/* styling for the cards on the blog page*/
+
+.card {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 1000px;
+  height: 150px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the left side (i.e description) of the card */
+.card-image {
+  flex: 1;
+  padding: 5px;
+}
+
+img { /* there should be a better way to do this*/
+  width : auto;
+  height : auto;
+}
+
+/* Style the right side (i.e description) of the card s*/
+.card-description {
+  flex: 4;
+  padding: 10px;
+}
+
+/* Style the card title */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#wrapper{
+  justify-content: center;
+  align-items: center;
+} 
+
