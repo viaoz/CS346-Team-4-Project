@@ -112,13 +112,19 @@ body {
     font-weight: var(--font-weight--default);
 }
 
+label {
+    font-family: var(--font-family--default);
+    font-size: var(--font-family--default);
+    font-weight: var(--font-weight--medium);
+}
+
 /* Standard Links */
 a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--primary-color);
 
   &:hover {
-    color: var(--primary-color);
+    color: var(--primary-color--active);
     transition: var(--default-transition);
   }
 
@@ -140,7 +146,8 @@ a {
 /* Standard Buttons */
 .primary-button {
   /* Sizing */
-  padding: 0.2rem 1rem;
+  padding: 0.2em 1rem;
+  width: fit-content;
 
   /* Styling */
   background-color: var(--primary-color);
@@ -230,15 +237,11 @@ nav {
 
   /* Styling */
   background-color: var(--background-color);
-  /* background-color: transparent; */
-  /* backdrop-filter: blur(10px); */
 
   .nav-content {
     /* Sizing */
     width: 90%; /* Fills 90% of screen width only! */
     margin: auto;
-
-    /* Positioning */
     
     #nav-mobile-elements {
         width: 100%;
@@ -278,6 +281,14 @@ nav {
         > .nav-link {
             padding-top: 8px;
             padding-bottom: 8px;
+
+            > a {
+                color: var(--text-color) !important;
+                &:hover {
+                    color: var(--primary-color) !important;
+                    transition: var(--default-transition);
+                }
+              }
         }
 
         .profile-options {
@@ -447,4 +458,29 @@ body {
 
 .button {
   color: var(--text-color);
+}
+
+button {
+    border: none;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 2em 0;
+
+    .input-with-icon {
+        display: flex;
+        align-items: center;
+        
+        > input {
+            margin-left: 0.5em;
+        }
+    }
+}
+
+.fa-solid{
+    color: var(--primary-color);
 }
