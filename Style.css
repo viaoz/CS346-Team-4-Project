@@ -541,7 +541,7 @@ form {
   padding: 5px;
 }
 
-img { /* there should be a better way to do this*/
+ .card-image > img { /* there should be a better way to do this*/
   width : auto;
   height : auto;
 }
