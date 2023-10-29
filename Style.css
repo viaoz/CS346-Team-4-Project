@@ -524,16 +524,22 @@ form {
 
 /* styling for the cards on the blog page*/
 
-.card {
+.card , .card-appointment {
   display: flex;
   border: 1px solid #ccc;
   border-radius: 5px;
+  /* flex-direction: column; */
   padding: 10px;
   margin: 10px;
-  width: 1000px;
+  width: 750px;
   height: 150px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-appointment{
+  display: flex;
+  flex-direction: column;
 }
 
 /* Style the left side (i.e description) of the card */
@@ -574,7 +580,7 @@ img { /* there should be a better way to do this*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: white;
+  color: black;
   flex-basis: 50%;
 
 }
@@ -595,6 +601,7 @@ img { /* there should be a better way to do this*/
 
 ul {
   list-style-type: none;
+  color: white;
 }
 
 
@@ -639,8 +646,25 @@ ul {
   color: white;
   padding: 5px;
   border-radius: 10%;
-
 }
+
+#header{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: start;
+border-bottom: 5px solid #918983;
+}
+
+#header > button{
+  width: 50px;
+  height: 50px;
+  background-color: #564787;
+  color: white;
+}
+
+
+/**testing things for the homepage **/
 
 
 
