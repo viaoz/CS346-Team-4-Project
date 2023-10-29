@@ -14,7 +14,7 @@
 <body>
 <nav id="nav">
 </nav>
-<div id="wrapper">
+<div id="home-wrapper">
   <div id="content">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris leo, efficitur nec dui eu, vehicula maximus lectus. Donec id hendrerit libero. Praesent nisi nibh, sagittis vel ipsum eget, molestie faucibus nisi. Mauris vel tristique massa. Aenean mollis dui quis tellus lacinia, ac semper urna vulputate. Vivamus imperdiet tortor ut molestie varius. Donec ultrices mauris ac lectus dictum placerat. Mauris non neque lorem. Donec ligula augue, rhoncus vitae urna vitae, ultricies dignissim lorem. Maecenas convallis lacus in sem laoreet facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In hac habitasse platea dictumst. Quisque tincidunt auctor velit. Quisque placerat justo ullamcorper pellentesque sollicitudin.
 
@@ -28,8 +28,96 @@
 
     </div>
     <div id="sidebar">
-      <div id="pets-sidepanel"></div>
-      <div id="providers-sidepanel"></div>
+
+
+      <h2>Quick Access</h2>
+      <div id="pets-sidepanel"> <!--Hard coding these for now will change this-->
+        
+      <ul id="pet-list">
+
+        <h3>Fur Family</h3>
+
+        <li>
+        <div id="pet1" class="pets">
+          <img src="Resources\Images\cat-dog.png" alt = "">
+          <div class="pet-info">
+        <p id="pet1-name"> Milo</p>
+        <p id="pet1-breed"> German Shepherd </p>
+        <p id="pet1-birthday">  03/29/2001</p>
+        <p id="pet1-medical-info" onclick="">Medical info</p>
+           </div>
+      </div>
+        </li>
+
+        <li> 
+        <div id="pet2" class="pets">
+          <img src="Resources\Images\cat-dog.png" alt = "">
+          <div class="pet-info">
+          <p id="pet2-name">Hero</p>
+          <p id="pet2-breed">  Golden Retriever</p>
+          <p id="pet2-birthday">03/29/2001</p>
+          <p id="pet2-medical-info" onclick="">Medical Info</p>
+           </div>
+          </div>
+        </li>  
+
+      
+        <!-- <li> 
+        <div id="pet3">
+          <img id = "pet3-image"src="Resources\Images\cat-dog.png" alt = "">
+          <p id="pet3-name">Merlin</p>
+          <p id="pet3-breed">NeatherLand dwarf rabbit</p>
+          <p id="pet3-birthday">03/29/2001</p>
+          <p id="pet3-medical-info" onclick=""> 
+        </div>  -->
+        
+
+        </li>
+    
+         <button class="edit-button">edit pets</button>
+      </ul>    
+
+      </div> <!--pets-sidepanel-->
+
+
+      <div id="providers-sidepanel">
+
+        <ul id="providers-list">
+          <h3>Providers</h3>
+        <li>  
+        <div class = providers>
+          <h4 id="provider1-name"> Dr Jordan </h4>
+          <p id="provider1-speciality"> Dogs </p>
+          <p id="provider1-clinic"> Pet clinic </p>
+          <p id="provider1-email"> Jordan@petclinic.com</p>
+          <p id="provider1-phone"> (920)292-2938</p>
+          </div>
+        </li>
+
+        <li>
+        <div class = providers>
+          <h4 id="provider2-name"> Dr Taylor </h4>
+          <p id="provider2-speciality"> cats </p>
+          <p id="provider2-clinic"> Pet clinic </p>
+          <p id="provider2-email"> Taylor@petclinic.com</p>
+          <p id="provider2-phone"> (920)292-2938</p>  
+        </div>
+      </li>
+
+      <li> 
+        <div class="providers">
+          <h4 id="provider3-name"> Dr Alex </h4>
+          <p id="provider3-speciality"> Dogs </p>
+          <p id="provider3-clinic"> Pet clinic </p>
+          <p id="provider3-email"> Alex@petclinic.com</p>
+          <p id="provider3-phone"> (920)292-2938</p>
+        </div> 
+      </li> 
+      <button class="edit-button" onclick="">edit providers</button>
+        </ul>  
+
+      </div> <!--providers-sidepanel-->
+      
     </div>
   </div>
   <footer id="footer">
