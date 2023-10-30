@@ -96,7 +96,7 @@
     }
 }
 
-@media screen and (max-width: 335px) {
+@media screen and (max-width: 345px) {
     .tile-container {
         width: 100%;
     }
