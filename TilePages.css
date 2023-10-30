@@ -62,13 +62,13 @@
 }
 
 /* Positional styling for content that is displayed vertically */
-.verticle-tile-content {
+.verticle-content {
     display: flex;
     flex-direction: column;
 }
 
 /* Positional styling for content that is displayed horizontally */
-.horizontal-tile-content {
+.horizontal-content {
     display: flex;
     flex-direction: row;
     gap: 1em;
@@ -93,6 +93,69 @@
 
     >button {
         vertical-align: top;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .tile-container {
+        width: 100%;
+    }
+
+    .header-with-buttons {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 8px;
+        width: 100%;
+    }
+
+    .header-buttons-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        gap: 4px;
+
+        >button {
+            width: 100%;
+        }
+    }
+
+    .horizontal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+}
+
+@media screen and (min-width: 345px) and (max-width: 745px) {
+    .tile-container {
+        width: 100%;
+    }
+
+    .header-with-buttons {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 8px;
+        width: 100%;
+    }
+
+    .header-buttons-section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+
+        >button {
+            width: 50%;
+        }
+    }
+
+    .horizontal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
     }
 }
 
