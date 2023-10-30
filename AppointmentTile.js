@@ -13,27 +13,28 @@ let appointmentTileString = `<div class="tile full-width" id="appointment-id" >
                    for example: appointment123.date -->
               <div class="vertical-tile-content">
                 <span class="tile-header">Date</span>
-                <span id="appointment-date">11/02/2023</span>
+                <span id="appointment-date" class="tile-normal-text">11/02/2023</span>
               </div>
               <div class="vertical-tile-content">
                 <span class="tile-header">Clinic</span>
-                <span id="clinic-name">Appanasha Pet Clinic</span>
+                <span id="clinic-name" class="tile-normal-text">Appanasha Pet Clinic</span>
               </div>
               <div class="vertical-tile-content">
                 <span class="tile-header">Location</span>
-                <span id="clinic-location">1205 Wittman Dr, Menasha, WI 54952</span>
+                <span id="clinic-location" class="tile-normal-text">1205 Wittman Dr, Menasha, WI 54952</span>
               </div>
               <div class="vertical-tile-content">
                 <span class="tile-header">Pet</span>
-                <span id="pet-name">Pet Name</span>
+                <span id="pet-name" class="tile-normal-text">Pet Name</span>
               </div>
             </div>
           </div>`;
 
+/* Inactive for DEMO */
 /* This will need refactoring for dynamically loading all appointments in the database */
-document.addEventListener("DOMContentLoaded", () => {
-  let tiles = document.querySelectorAll(".appointmentTile");
-  tiles.forEach((tile) => {
-    tile.innerHTML = appointmentTileString;
-  })
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   let tiles = document.querySelectorAll(".appointmentTile");
+//   tiles.forEach((tile) => {
+//     tile.innerHTML = appointmentTileString;
+//   })
+// });
