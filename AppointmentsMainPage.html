@@ -1,30 +1,130 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>replit</title>
-    <link href="Style.css" rel="stylesheet" type="text/css" />
-    <link href="Navigation.css" rel="stylesheet" type="text/css" />
-    <link href="TilePages.css" rel="stylesheet" type="text/css" />
-    <script src="MobileMenu.js"></script>
-    <script src="Navigation.js"></script>
-    <script src="Footer.js"></script>
-    <script src="AppointmentTile.js"></script>
-  </head>
 
-  <body>
-    <nav id="nav">
-    </nav>
-    <div id="wrapper">
-      <div id="content">
-        <section class="tile-container">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>replit</title>
+  <link href="Style.css" rel="stylesheet" type="text/css" />
+  <link href="Navigation.css" rel="stylesheet" type="text/css" />
+  <link href="TilePages.css" rel="stylesheet" type="text/css" />
+  <script src="MobileMenu.js"></script>
+  <script src="Navigation.js"></script>
+  <script src="Footer.js"></script>
+  <script src="AppointmentTile.js"></script>
+</head>
+
+<body>
+  <nav id="nav">
+  </nav>
+  <div id="wrapper">
+    <div id="content">
+      <section class="tile-container">
+        <h1>Upcoming Appointments</h1>
+        <!-- <div class="appointmentTile"></div>
           <div class="appointmentTile"></div>
-          <div class="appointmentTile"></div>
-          <div class="appointmentTile"></div>
-        </section>
-      </div>
+          <div class="appointmentTile"></div> -->
+        <div class="tile full-width" id="appointment-id">
+          <div class="horizontal-tile-content header-with-buttons">
+            <span class="tile-title">Provider Name</span>
+            <div class="header-buttons-section">
+              <button id="edit-appointment-button" class="primary-button">Edit Appointment</button>
+              <button id="message-provider-button" class="primary-button">Message Provider</button>
+            </div>
+          </div>
+          <hr>
+          <div class="horizontal-tile-content">
+            <!-- each appointment entity could be referenced using a 
+                   format like appointment-id.<info-name>, 
+                   for example: appointment123.date -->
+            <div class="vertical-tile-content">
+              <span class="tile-header">Date</span>
+              <span id="appointment-date" class="tile-normal-text">11/02/2023</span>
+            </div>
+            <div class="vertical-tile-content">
+              <span class="tile-header">Clinic</span>
+              <span id="clinic-name" class="tile-normal-text">Appanasha Pet Clinic</span>
+            </div>
+            <div class="vertical-tile-content">
+              <span class="tile-header">Location</span>
+              <span id="clinic-location" class="tile-normal-text">1205 Wittman Dr, Menasha, WI 54952</span>
+            </div>
+            <div class="vertical-tile-content">
+              <span class="tile-header">Pet</span>
+              <span id="pet-name" class="tile-normal-text">Pet Name</span>
+            </div>
+          </div>
+        </div>
+        <div class="tile full-width" id="appointment-id">
+          <div class="horizontal-tile-content header-with-buttons">
+            <span class="tile-title">Provider Name</span>
+            <div class="header-buttons-section">
+              <button id="edit-appointment-button" class="primary-button">Edit Appointment</button>
+              <button id="message-provider-button" class="primary-button">Message Provider</button>
+            </div>
+          </div>
+          <hr>
+          <div class="horizontal-tile-content">
+            <!-- each appointment entity could be referenced using a 
+                   format like appointment-id.<info-name>, 
+                   for example: appointment123.date -->
+            <div class="vertical-tile-content">
+              <span class="tile-header">Date</span>
+              <span id="appointment-date" class="tile-normal-text">11/02/2023</span>
+            </div>
+            <div class="vertical-tile-content">
+              <span class="tile-header">Clinic</span>
+              <span id="clinic-name" class="tile-normal-text">Appanasha Pet Clinic</span>
+            </div>
+            <div class="vertical-tile-content">
+              <span class="tile-header">Location</span>
+              <span id="clinic-location" class="tile-normal-text">1205 Wittman Dr, Menasha, WI 54952</span>
+            </div>
+            <div class="vertical-tile-content">
+              <span class="tile-header">Pet</span>
+              <span id="pet-name" class="tile-normal-text">Pet Name</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="past-appointments-container" class="inactive">
+          <h2>Past Appointments</h2>
+          <div class="tile full-width" id="appointment-id">
+            <div class="horizontal-tile-content header-with-buttons">
+              <span class="tile-title">Provider Name</span>
+              <div class="header-buttons-section">
+                <button id="edit-appointment-button" class="tertiary-button">Edit Appointment</button>
+                <button id="message-provider-button" class="tertiary-button">Message Provider</button>
+              </div>
+            </div>
+            <hr>
+            <div class="horizontal-tile-content">
+              <!-- each appointment entity could be referenced using a 
+                   format like appointment-id.<info-name>, 
+                   for example: appointment123.date -->
+              <div class="vertical-tile-content">
+                <span class="tile-header">Date</span>
+                <span id="appointment-date" class="tile-normal-text">11/02/2023</span>
+              </div>
+              <div class="vertical-tile-content">
+                <span class="tile-header">Clinic</span>
+                <span id="clinic-name" class="tile-normal-text">Appanasha Pet Clinic</span>
+              </div>
+              <div class="vertical-tile-content">
+                <span class="tile-header">Location</span>
+                <span id="clinic-location" class="tile-normal-text">1205 Wittman Dr, Menasha, WI 54952</span>
+              </div>
+              <div class="vertical-tile-content">
+                <span class="tile-header">Pet</span>
+                <span id="pet-name" class="tile-normal-text">Pet Name</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <footer id="footer"></footer>
-  </body>
+  </div>
+  <footer id="footer"></footer>
+</body>
+
 </html>

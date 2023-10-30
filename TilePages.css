@@ -1,70 +1,122 @@
-
 @import url("/Style.css");
-
-.full-width {
-  width: 70%;
-}
 
 .tile-title {
     display: inline-block;
     font-size: var(--font-size--large);
     font-weight: var(--font-weight--large);
-  }
+}
 
-  .tile-header {
+.tile-header {
     display: block;
-    font-size: var(--font-size--medium);
-    font-weight: var(--font-weight--medium);
-  }
+    font-size: var(--font-size--default);
+    font-weight: 500;
+}
+
+.tile-normal-text {
+    font-weight: 300;
+}
 
 .tile-container {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    width: 70%;
+    align-self: center;
 }
 
+/* Styling for a normal tile */
 .tile {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid var(--tertiary-color);
-  border-radius: 4px;
-  padding: 8px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    padding: 8px;
 }
 
+/* Styling for when a normal tile is hovered */
 .tile:hover {
-    border: 1.5px solid var(--primary-color);
-  box-shadow: 4px 4px 1px 0px rgba(230, 227, 224, 1);
-  -webkit-box-shadow: 4px 4px 1px 0px rgba(230, 227, 224, 1);
-  -moz-box-shadow: 4px 4px 1px 0px rgba(230, 227, 224, 1);
+    border: 1.5px solid var(--primary-color--active);
+    box-shadow: 4px 4px 1px 0px rgba(230, 227, 224, 1);
+    -webkit-box-shadow: 4px 4px 1px 0px rgba(230, 227, 224, 1);
+    -moz-box-shadow: 4px 4px 1px 0px rgba(230, 227, 224, 1);
 
-  transition: ease-in-out var(--default-transition);
+    transition: ease-in-out var(--default-transition);
 }
 
+/* Styling inactive tiles */
+.inactive .tile {
+    border: 1px solid var(--tertiary-color);
+
+    /* Styling inactive tile text */
+    color: var(--tertiary-color--active) !important;
+}
+
+/* Styling inactive tiles on hover */
+.inactive .tile:hover {
+    border: 1.5px solid var(--tertiary-color--active);
+    box-shadow: 4px 4px 1px 0px rgba(230, 227, 224, 1);
+    -webkit-box-shadow: 4px 4px 1px 0px rgba(230, 227, 224, 1);
+    -moz-box-shadow: 4px 4px 1px 0px rgba(230, 227, 224, 1);
+
+    transition: ease-in-out var(--default-transition);
+}
+
+/* Positional styling for content that is displayed vertically */
 .verticle-tile-content {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Positional styling for content that is displayed horizontally */
 .horizontal-tile-content {
-  display: flex;
-  flex-direction: row;
-  gap: 4em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
 }
 
+/* Styling for tile headers that contain buttons on the right-hand side */
 .header-with-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: max-content;
     padding-bottom: 4px;
+    width: 100%;
 }
 
+/* Styling for the buttons in the header section */
 .header-buttons-section {
     display: flex;
     flex-direction: row;
     gap: 1em;
 
-    > button {
+    >button {
         vertical-align: top;
     }
 }
+
+/* Styling to display circular images on the left-hand side of a tile*/
+.tile img {
+    border-radius: 50%;
+    height: 8em;
+    width: 8em;
+    justify-self: center;
+    align-self: center;
+    object-fit: cover;
+    object-position: top;
+    border: 1px solid var(--tertiary-color);
+    background-color: var(--tertiary-color);
+}
+
+
+/* ---------- PET PROFILES PAGE STYLING ---------- */
+
+/* Styles the pet information sections of the pet tiles */
+.pet-information {
+    width: 75%;
+    margin-left: auto;
+}
+
+
+/* ---------- APPOINTMENTS PAGE STYLING ---------- */
