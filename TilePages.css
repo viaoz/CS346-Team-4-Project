@@ -1,0 +1,70 @@
+
+@import url("/Style.css");
+
+.full-width {
+  width: 70%;
+}
+
+.tile-title {
+    display: inline-block;
+    font-size: var(--font-size--large);
+    font-weight: var(--font-weight--large);
+  }
+
+  .tile-header {
+    display: block;
+    font-size: var(--font-size--medium);
+    font-weight: var(--font-weight--medium);
+  }
+
+.tiles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.tile:hover {
+    border: 1.5px solid var(--primary-color);
+  box-shadow: 4px 4px 1px 0px rgba(230, 227, 224, 1);
+  -webkit-box-shadow: 4px 4px 1px 0px rgba(230, 227, 224, 1);
+  -moz-box-shadow: 4px 4px 1px 0px rgba(230, 227, 224, 1);
+
+  transition: ease-in-out var(--default-transition);
+}
+
+.verticle-tile-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-tile-content {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+}
+
+.header-with-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: max-content;
+    padding-bottom: 4px;
+}
+
+.header-buttons-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
+    > button {
+        vertical-align: top;
+    }
+}
