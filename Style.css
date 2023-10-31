@@ -197,7 +197,7 @@ footer {
   flex-direction: column;
   padding: 0;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 1em;
 
   /* Sizing */
   width: 90%;
@@ -212,7 +212,7 @@ footer {
       text-decoration: none;
 
       > #footer-logo {
-        height: 75px;
+        height: 4em;
         width: auto;
       }
     }
@@ -352,14 +352,15 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 5em;
+  gap: 1em;
 }
+
 #sidebar {
   width: 100%;
 }
 
 /* Large devices such as laptops (1024px and up) */
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 785px) {
     #slider { 
         width: 70% !important;
         margin: 0 auto; 
