@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -14,7 +15,7 @@
     <div class="nav-content">
       <div id="nav-mobile-elements">
       <a href="/HomePage.html" class="nav-logo"><img src="/Resources/Images/FVVV-logo.png" alt="Fox Valley Virtual Vet logo"></a>
-      <button title="menuToggle" onclick="toggleMenu()" id="nav-mobile-menu-button"><img src="/Resources/Images/menu.png" alt ="" id="menu-icon"></button>
+      <button onclick="toggleMenu()" id="nav-mobile-menu-button"><img src="/Resources/Images/menu.png" id="menu-icon"></button>
     </div>
       <ul id="nav-links">
           <li class="nav-link">
@@ -32,29 +33,31 @@
           <li class="profile-options">
             <a href="/SignInPage.html" class="primary-button">Sign In</a>
             <a href="/CreateAnAccountPage.html" class="tertiary-button">Create an Account</a>
-            <a href="/UserProfilePage.html" class="user-icon"><img src="Resources/Images/user-icon.png" alt=""></a>
+            <a href="/UserProfilePage.html" class="user-icon"><img src="Resources/Images/user-icon.png"></a>
           </li>
       </ul>
     </div>
-</nav>
-<div id="blogWrapper">
+  </nav>
+  <div id="wrapper">
 
-  <div id="blogContent">
-    <h1>Blog posts</h1>
-    <!-- will need to make this dynamic when we have a backend for now I have hard coded these things -->
-    <div class="card" onclick="window.location.href='https:\/\/w3docs.com';">
-      <div class="card-image">
-        <!---Card Image---->
-        <img src="Resources\Images\cat-dog.png"  alt="Cat and Dog" width="100">
-      </div>
-      <div class="card-description" >
-        <div class="card-title">Lorem ipsum</div>
-        <div class="card-content" >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat tortor a ipsum luctus, non euismod elit venenatis. Suspendisse ac sagittis lorem...........
+    <div id="content">
+
+
+      <h1>Blog posts</h1>
+      <!-- will need to make this dynamic when we have a backend for now I have hard coded these things -->
+
+      <div class="card" onclick="window.location.href='https:\/\/w3docs.com';">
+        <div class="card-image">
+          <!---Card Image---->
+          <img src="Resources\Images\cat-dog.png"  alt="Dog on bike" width="100">
+        </div>
+        <div class="card-description" >
+          <div class="card-title">Lorem ipsum</div>
+          <div class="card-content" >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat tortor a ipsum luctus, non euismod elit venenatis. Suspendisse ac sagittis lorem...........
+          </div>
         </div>
       </div>
-<<<<<<< HEAD
-=======
 
 
       <div class="card" onclick="window.location.href='https:\/\/w3docs.com';">
@@ -243,190 +246,6 @@
 
       <!-- will need to make this dynamic--->
       
->>>>>>> 3c99605 (chore : created a mock blog with mock articles card list)
-    </div>
-
-    <div class="card" onclick="window.location.href='https:\/\/w3docs.com';">
-      <div class="card-image">
-        <!---Card Image---->
-        <img src="Resources\Images\cat-dog.png"  alt="Cat and Dog" width="100">
-      </div>
-      <div class="card-description" >
-        <div class="card-title">Loren Ipsum</div>
-        <div class="card-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat tortor a ipsum luctus, non euismod elit venenatis. Suspendisse ac sagittis lorem...........
-        </div>
-      </div>
-    </div>
-
-    <div class="card" onclick="window.location.href='https:\/\/w3docs.com';">
-      <div class="card-image">
-        <!---Card Image---->
-        <img src="Resources\Images\cat-dog.png"  alt="Cat and Dog" width="100">
-      </div>
-      <div class="card-description" >
-        <div class="card-title">Loren Ipsum</div>
-        <div class="card-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat tortor a ipsum luctus, non euismod elit venenatis. Suspendisse ac sagittis lorem...........
-        </div>
-      </div>
-    </div>
-
-    <div class="card" onclick="window.location.href='https:\/\/w3docs.com';">
-      <div class="card-image">
-        <!---Card Image---->
-        <img src="Resources\Images\cat-dog.png"  alt="Cat and Dog" width="100">
-      </div>
-      <div class="card-description" >
-        <div class="card-title">Loren Ipsum</div>
-        <div class="card-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat tortor a ipsum luctus, non euismod elit venenatis. Suspendisse ac sagittis lorem...........
-        </div>
-      </div>
-    </div>
-
-    <div class="card" onclick="window.location.href='https:\/\/w3docs.com';">
-      <div class="card-image">
-        <!---Card Image---->
-        <img  src="Resources\Images\cat-dog.png"  alt="Cat and Dog" width="100">
-      </div>
-      <div class="card-description" >
-        <div class="card-title">Loren Ipsum</div>
-        <div class="card-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat tortor a ipsum luctus, non euismod elit venenatis. Suspendisse ac sagittis lorem...........
-        </div>
-      </div>
-    </div>
-
-    <div class="card" onclick="window.location.href='https:\/\/w3docs.com';">
-      <div class="card-image">
-        <!---Card Image---->
-        <img src="Resources\Images\cat-dog.png"  alt="Cat and Dog" width="100">
-      </div>
-      <div class="card-description" >
-        <div class="card-title">Loren Ipsum</div>
-        <div class="card-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat tortor a ipsum luctus, non euismod elit venenatis. Suspendisse ac sagittis lorem...........
-        </div>
-      </div>
-    </div>
-
-    <div class="card" onclick="window.location.href='https:\/\/w3docs.com';">
-      <div class="card-image">
-        <!---Card Image---->
-        <img src="Resources\Images\cat-dog.png"  alt="Cat and Dog" width="100">
-      </div>
-      <div class="card-description" >
-        <div class="card-title">Loren Ipsum</div>
-        <div class="card-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat tortor a ipsum luctus, non euismod elit venenatis. Suspendisse ac sagittis lorem...........
-        </div>
-      </div>
-    </div>
-
-    <div class="card" onclick="window.location.href='https:\/\/w3docs.com';">
-      <div class="card-image">
-        <!---Card Image---->
-        <img src="Resources\Images\cat-dog.png"  alt="Cat and Dog" width="100">
-      </div>
-      <div class="card-description" >
-        <div class="card-title">Loren Ipsum</div>
-        <div class="card-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat tortor a ipsum luctus, non euismod elit venenatis. Suspendisse ac sagittis lorem...........
-        </div>
-      </div>
-    </div>
-
-    <div class="card" onclick="window.location.href='https:\/\/w3docs.com';">
-      <div class="card-image">
-        <!---Card Image---->
-        <img src="Resources\Images\cat-dog.png"  alt="Cat and Dog" width="100">
-      </div>
-      <div class="card-description" >
-        <div class="card-title">Loren Ipsum</div>
-        <div class="card-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat tortor a ipsum luctus, non euismod elit venenatis. Suspendisse ac sagittis lorem...........
-        </div>
-      </div>
-    </div>
-
-    <div class="card" onclick="window.location.href='https:\/\/w3docs.com';">
-      <div class="card-image">
-        <!---Card Image---->
-        <img src="Resources\Images\cat-dog.png"  alt="Cat and Dog" width="100">
-      </div>
-      <div class="card-description" >
-        <div class="card-title">Loren Ipsum</div>
-        <div class="card-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat tortor a ipsum luctus, non euismod elit venenatis. Suspendisse ac sagittis lorem...........
-        </div>
-      </div>
-    </div>
-
-    <div class="card" onclick="window.location.href='https:\/\/w3docs.com';">
-      <div class="card-image">
-        <!---Card Image---->
-        <img src="Resources\Images\cat-dog.png"  alt="Cat and Dog" width="100">
-      </div>
-      <div class="card-description" >
-        <div class="card-title">Loren Ipsum</div>
-        <div class="card-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat tortor a ipsum luctus, non euismod elit venenatis. Suspendisse ac sagittis lorem...........
-        </div>
-      </div>
-    </div>
-
-    <div class="card" onclick="window.location.href='https:\/\/w3docs.com';">
-      <div class="card-image">
-        <!---Card Image---->
-        <img src="Resources\Images\cat-dog.png"  alt="Cat and Dog" width="100">
-      </div>
-      <div class="card-description" >
-        <div class="card-title">Loren Ipsum</div>
-        <div class="card-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat tortor a ipsum luctus, non euismod elit venenatis. Suspendisse ac sagittis lorem...........
-        </div>
-      </div>
-    </div>
-
-    <div class="card" onclick="window.location.href='https:\/\/w3docs.com';">
-      <div class="card-image">
-        <!---Card Image---->
-        <img src="Resources\Images\cat-dog.png"  alt="Cat and Dog" width="100">
-      </div>
-      <div class="card-description" >
-        <div class="card-title">Loren Ipsum</div>
-        <div class="card-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat tortor a ipsum luctus, non euismod elit venenatis. Suspendisse ac sagittis lorem...........
-        </div>
-      </div>
-    </div>
-
-    <div class="card" onclick="window.location.href='https:\/\/w3docs.com';">
-      <div class="card-image">
-        <!---Card Image---->
-        <img src="Resources\Images\cat-dog.png"  alt="Cat and Dog" width="100">
-      </div>
-      <div class="card-description" >
-        <div class="card-title">Loren Ipsum</div>
-        <div class="card-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat tortor a ipsum luctus, non euismod elit venenatis. Suspendisse ac sagittis lorem...........
-        </div>
-      </div>
-    </div>
-
-    <div class="card" onclick="window.location.href='https:\/\/w3docs.com';">
-      <div class="card-image">
-        <!---Card Image---->
-        <img src="Resources\Images\cat-dog.png"  alt="Cat and Dog" width="100">
-      </div>
-      <div class="card-description" >
-        <div class="card-title">Loren Ipsum</div>
-        <div class="card-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat tortor a ipsum luctus, non euismod elit venenatis. Suspendisse ac sagittis lorem...........
-        </div>
-      </div>
-    </div>
     </div>
 
 
@@ -434,27 +253,31 @@
       this is a sidebar
       <!-- sidebar content goes here U(⁎˃ᆺ˂)U -->
     </div>
-
   </div>
   <footer>
     <ul>
-      <li><img src="/Resources/Images/FVVV-Logo.png" id="footer-logo" alt></li>
+      <li><img src="/Resources/Images/FVVV-Logo.png" id="footer-logo"></li>
       <li><h4>Company</h4></li>
       <li><a href="#">Contact Us</a></li>
       <li><a href="#">About Us</a></li>
     </ul>
     <ul>
-      <li><h4>Appointments & Messaging</h4></li>
+      <li>
+        <h4>Appointments & Messaging</h4>
+      </li>
       <li><a href="/MessagingMainPage.html">Message a Provider</a></li>
       <li><a href="/ProvidersMainPage.html">Find a Provider</a></li>
       <li><a href="/AppointmentsMainPage.html">Schedule an Appointment</a></li>
     </ul>
     <ul>
-      <li><h4>Pet Care Resources</h4></li>
+      <li>
+        <h4>Pet Care Resources</h4>
+      </li>
       <li><a href="#">Caring for your dog</a></li>
       <li><a href="#">Caring for your cat</a></li>
       <li><a href="#">Caring for your small animal</a></li>
     </ul>
   </footer>
 </body>
+
 </html>
