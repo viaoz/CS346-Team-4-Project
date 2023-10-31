@@ -25,6 +25,7 @@
   text-wrap: nowrap;
   overflow: hidden;
   align-self: flex-end;
+  border: none;
 }
 
 .card button:hover {

@@ -22,7 +22,32 @@ body {
 /* TYPOGRAPHY */
 :root {
     font-size: 75%; /* (75/100) * 16px = 12px */
+    font-size: 75%; /* (75/100) * 16px = 12px */
 
+    --font-size--small: 1rem; /* 12px */
+    --font-family--small: "Source Sans 3", sans-serif;
+    --font-weight--small: normal;
+  
+    --font-size--default: 1.2rem; /* 14.4px (12px * 1.2) */
+    --font-family--default: "Source Sans 3", sans-serif;
+    --font-weight--default: normal;
+  
+    --font-size--medium: 1.5rem; /* 18px (12px * 1.5) */
+    --font-family--medium: "Open Sans", sans-serif;
+    --font-weight--medium: bold;
+  
+    --font-size--large: 1.8rem; /* 21.6px (12px * 1.8) */
+    --font-family--large: "Open Sans", sans-serif;
+    --font-weight--large: bold;
+  
+    --font-size--xlarge: 2.4rem; /* 28.8px (12px * 2.4) */
+    --font-family--xlarge: "Open Sans", sans-serif;
+    --font-weight--xlarge: bold;
+  
+    --font-size--xxlarge: 3rem; /* 36px (12px * 3) */
+    --font-family--xxlarge: "Open Sans", sans-serif;
+    --font-weight--xxlarge: bold;
+  
     --font-size--small: 1rem; /* 12px */
     --font-family--small: "Source Sans 3", sans-serif;
     --font-weight--small: normal;
@@ -142,7 +167,7 @@ a {
 .primary-button {
   /* Sizing */
   padding: 0.2em 1rem;
-  zzwidth: fit-content;
+  width: fit-content;
 
   /* Styling */
   background-color: var(--primary-color);
@@ -460,10 +485,6 @@ body {
 }
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 8dc443237958048f136632cb891f64919e1e8b92
 button {
   border: none;
 }
@@ -681,5 +702,3 @@ border-bottom: 5px solid #918983;
 
 
 
-=======
->>>>>>> 3c99605 (chore : created a mock blog with mock articles card list)
