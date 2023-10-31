@@ -11,6 +11,7 @@
   height: 20vh;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-self: center;
 }
 
 .card:hover {
@@ -21,11 +22,14 @@
   width: 60%;
   max-width: 20em;
   vertical-align: bottom;
-  overflow-wrap: nowrap;
-  text-wrap: nowrap;
-  overflow: hidden;
   align-self: flex-end;
   border: none;
+}
+
+@media screen and (max-width: 560px) {
+  .card button {
+    display: none;
+  }
 }
 
 .card button:hover {
@@ -50,7 +54,7 @@
 }
 
 .card-content {
-  height: 60%;
+  height: 40%;
   overflow: hidden;
 }
 

@@ -15,9 +15,7 @@ let footerString = `
 </ul>
 <ul>
   <li><h4>Pet Care Resources</h4></li>
-  <li><a href="#">Caring for your dog</a></li>
-  <li><a href="#">Caring for your cat</a></li>
-  <li><a href="#">Caring for your small animal</a></li>
+  <li><a href="/PetCareBlogMainPage.html">Pet Care Blog</a></li>
 </ul>
 `;
 

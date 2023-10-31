@@ -168,6 +168,7 @@ a {
   /* Sizing */
   padding: 0.2em 1rem;
   width: fit-content;
+  border: none;
 
   /* Styling */
   background-color: var(--primary-color);
@@ -186,6 +187,7 @@ a {
   /* Sizing */
   padding: 0.2rem 1rem;
   width: fit-content;
+  border: none;
 
   /* Styling */
   background-color: var(--secondary-color);
@@ -203,6 +205,7 @@ a {
   /* Sizing */
   padding: 0.2rem 1rem;
   width: fit-content;
+  border: none;
 
   /* Styling */
   background-color: var(--tertiary-color);
@@ -227,6 +230,7 @@ footer {
 
   /* Sizing */
   width: 90%;
+  
 
   > ul {
     /* Positioning */
@@ -236,6 +240,10 @@ footer {
     > li {
       list-style: none;
       text-decoration: none;
+
+      > h4 {
+        color: var(--text-color);
+      }
 
       > #footer-logo {
         height: 4em;
@@ -483,8 +491,7 @@ body {
 .button {
   color: var(--text-color);
 }
-
-<<<<<<< HEAD
+x
 button {
   border: none;
 }
@@ -686,10 +693,6 @@ border-bottom: 5px solid #918983;
   background-color: #564787;
   color: white;
 }
-
-
-/**testing things for the homepage **/
-
 
 
 
